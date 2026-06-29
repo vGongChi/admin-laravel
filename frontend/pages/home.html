@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://renjiehr.com/xin/index.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="keywords" content="上海智丹国际贸易有限公司,上海智丹国际贸易,上海智丹国际,智丹国际贸易,智丹国际">
+		<meta name="description" content="主要从事国内、进出口贸易、国际间商品技术服务贸易，公司秉持“成就客户，成就员工，创造商业价值”的使命，一直致力于成为全世界最好的商业解决方案提供者�?>
+		<meta name="author" content="上海衿领信息科技有限公司-互联�?行业解决方案-http://kinglink.cc">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>首页-上海智丹国际贸易有限公司</title>
+		<!-- plug-in/0kinglink/images/ -->
+		<link rel="icon" type="images/x-icon" href="https://www.zdan.com.cn/plug-in/0kinglink/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./首页-上海智丹国际贸易有限公司_files/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="./首页-上海智丹国际贸易有限公司_files/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./首页-上海智丹国际贸易有限公司_files/lightGallery.css">
+		<link rel="stylesheet" type="text/css" href="./首页-上海智丹国际贸易有限公司_files/style.css">
+
+		<script src="./首页-上海智丹国际贸易有限公司_files/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./首页-上海智丹国际贸易有限公司_files/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./首页-上海智丹国际贸易有限公司_files/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./首页-上海智丹国际贸易有限公司_files/global.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./首页-上海智丹国际贸易有限公司_files/lightGallery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./首页-上海智丹国际贸易有限公司_files/side.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="index_body">
+		<!--header-->
+		<div class="header indexHeader headerEffect"><!-- plug-in/0kinglink/images/ -->
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+							<!--<span class="sr-only">切换导航</span>-->
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="https://www.zdan.com.cn/">
+							<img src="./首页-上海智丹国际贸易有限公司_files/logo.png">
+						</a>
+					</div>
+					<div class="top_sub">
+						<div class="top_sub_serchBtn">
+							<a href="javascript:;" data-toggle="modal" data-target="#myModal"><img src="./首页-上海智丹国际贸易有限公司_files/i20.png"></a>
+						</div>
+
+						<div class="top_lan">
+							<a>CH</a>
+							<div class="top_lan_list">
+								<a href="http://renjiehr.com/xin/index.html">CN</a>
+								<a href="http://renjiehr.com/xin/index.html">EN</a>
+								<a href="http://renjiehr.com/xin/index.html">RUS</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<!--导航-->
+							<ul class="nav navbar-nav" id="main-nav"></ul>
+
+				</div>
+			</nav>
+
+			<!-- Modal -->
+			<div class="modal fade form_modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<i class="modal-close" data-dismiss="modal" aria-hidden="true">×</i>
+						<div class="modal-body">
+							<div class="modal_inner">
+								<form class="modal-search" action="http://renjiehr.com/xin/index.do?search" method="post">
+									<div class="form-group"><input class="form-control" type="text" name="keyword" id="keyword" placeholder="请输入关键词搜索"></div>
+									<input class="btn" type="submit" value="提交">
+									<!-- <a class="btn" href="../product/return.html">提交</a> -->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					$('.navbar-toggle').click(function() {
+						$(this).toggleClass('menu_close');
+					});
+					if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
+						//解决 iOS 设备上链接要点击两次才跳转的问题
+						$('.nav a').on('click touchend', function(e) {
+							var el = $(this);
+							var link = el.attr('href');
+							if (link) {
+								window.location = link;
+							}
+						});
+					};
+
+					// pc导航
+					var w = $(window).width()
+					navDown();
+					$(window).resize(function() {
+						w = $(this).width();
+						navDown();
+					});
+
+					function navDown() {
+						if (w >= 992) {
+							$('.navbar-nav>li').hover(function() {
+								$(this).find('.dropdown-menu').stop().slideDown('fast');
+							}, function() {
+								$(this).find('.dropdown-menu').stop().slideUp('fast');
+							});
+
+							$('.navbar-default .dropdown-menu>li>a').click(function() {
+								$(this).parents('.dropdown-menu').hide();
+							});
+						} else {
+							$('.navbar-default .dropdown-menu>li>a').click(function() {
+								$('.navbar-toggle').toggleClass('menu_close');
+								$('.header').toggleClass('header-white-bg2');
+								$('.header .navbar-collapse').toggleClass('in');
+							});
+						}
+					}
+				});
+			</script>
+		</div>
+
+		<div class="banner">
+			<div class="swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
+				<div class="swiper-wrapper" id="banner-wrapper" style="transition-duration: 0ms;"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-prev swiper-button-white" tabindex="0" role="button" aria-label="Previous slide"></div>
+				<div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide">
+				</div>
+
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+			<a class="downTip"></a>
+		</div>
+
+		<div class="index_wrapper">
+			<div class="indexItem indexItem01" style="background:url(/img/server/upload/img/photosucai/20200520/bg1_1589948307189.png) no-repeat top center;background-size:cover;">
+				<div class="container">
+					<div class="indexTitle zoomIn animated">
+						<a href="https://www.zdan.com.cn/index.do?about">
+							<div class="en">COMPANY PROFILE</div>
+							<div class="h2">公司简�?/div>
+						</a>
+					</div>
+					<div class="index01_main">
+						<div class="row">
+							<div class="col-xs-12 col-md-6 column left fadeInRight animated">
+								<div class="InfoContent">
+									<p>上海智丹国际贸易有限公司�?005年创立于上海市外高桥保税区，主要从事国内、进出口贸易、国际间商品技术服务贸易，公司秉持“成就客户，成就员工，创造商业价值”的使命，一直致力于成为全世界最好的商业解决方案提供者�?/p>
+								</div>
+								<a class="more" href="https://www.zdan.com.cn/index.do?about">READ MORE</a>
+							</div>
+							<div class="col-xs-12 col-md-6 column right fadeInLeft animated">
+								<div class="rightImg">
+									<div class="img"><img src="./首页-上海智丹国际贸易有限公司_files/img1_1589945469735.jpg"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="indexItem indexItem02" style="background:#edf3ff;">
+				<div class="appArea fadeInUp animated">
+					<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+						<div class="swiper-wrapper appArea_list" id="business-scopes-wrapper" style="transform: translate3d(0px, 0px, 0px);"></div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+				</div>
+
+			</div>
+
+			<div class="indexItem indexItem03" style="background:url(/img/server/upload/img/photosucai/20200520/bg2_1589948353590.jpg) no-repeat top center;background-size:cover;">
+				<div class="container">
+					<div class="indexTitle zoomIn animated">
+						<a href="https://www.zdan.com.cn/index.do?contact">
+							<div class="en">GLOBAL PRESENCE</div>
+							<div class="h2">ZDAN · 全球</div>
+						</a>
+					</div>
+					<div class="row index03_main">
+						<div class="col-xs-12 col-md-5 col-lg-4 index03_main_left fadeInUp animated">
+							<div class="">
+								<div class="tel"><img src="./首页-上海智丹国际贸易有限公司_files/z1.png">021-64298971</div>
+								<div class="h1">上海智丹国际贸易有限公司</div>
+								<div class="InfoContent">
+									<p>公司地址：上海市闵行区恒南路688�?6�?单元</p>
+									<p>联系电话�?21-64298971, 021-64298972</p>
+									<p>公司邮箱：leon@zdan.com.cn</p>
+								</div>
+							</div>
+							<div class="">
+								<div class="ewms">
+									<div class="item">
+										<img src="./首页-上海智丹国际贸易有限公司_files/智丹中文_1593586892111.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-7 col-lg-8 index03_main_right fadeInUp animated">
+							<div class="form_main">
+								<form action="http://renjiehr.com/xin/index.do?save" method="post">
+									<div class="row message_form">
+										<div class="col-sm-6 column">
+											<div class="form-group"><input class="form-control required" type="text" name="name" id="name" placeholder="您的姓名" data-valid="isNonEmpty" data-error="*"></div>
+										</div>
+										<div class="col-sm-6 column">
+											<div class="form-group"><input class="form-control required" type="tel" name="tel" id="tel" placeholder="您的电话" data-valid="isNonEmpty" data-error="*"></div>
+										</div>
+										<div class="col-sm-6 column">
+											<div class="form-group"><input class="form-control required" type="mail" name="email" id="email" placeholder="您的邮箱" data-valid="isNonEmpty" data-error="*"></div>
+										</div>
+										<div class="col-sm-6 column">
+											<div class="form-group"><input class="form-control required" type="text" name="address" id="address" placeholder="您的地址" data-valid="isNonEmpty" data-error="*"></div>
+										</div>
+										<div class="col-sm-12 column">
+											<div class="form-group"><textarea class="form-control" name="content" id="content" rows="12" placeholder="留言"></textarea></div>
+										</div>
+										<div class="col-sm-12 column">
+											<div class="form-group"><button type="submit" class="btn btn-default">提交</button></div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<section class="footer">
+			<div class="copyRight">
+				<div class="container">
+					<div class="">
+						Copyright © 上海智丹国际贸易有限公司All Rights Reserved |
+						<a class="" href="https://beian.miit.gov.cn/" target="_blank">沪ICP�?6052390�?2</a>&nbsp;&nbsp;
+						�?�?应急管危经许[2022]204680(Y)
+					</div>
+					<div class="">
+						<!-- <a class="" href="" target="_blank"><img src="../images/bei1.png" >&nbsp;&nbsp;沪公网安�?31011802003179�?/a>&nbsp;&nbsp;
+			<a class="" href="" target="_blank"><img width="30" src="../images/bei2.jpg" ></a>&nbsp;&nbsp; -->
+						<a href="http://www.kinglink.cc/" target="_blank"><img class="support" src="./首页-上海智丹国际贸易有限公司_files/support.svg"></a>
+					</div>
+				</div>
+			</div>
+			<!--返回顶部-->
+			<div class="gotop" style="display: block;"></div>
+			<style>
+				img.support {
+					height: 14px;
+					vertical-align: -2px;
+				}
+
+				@media (max-width:767px) {
+					img.support {
+						height: 12px;
+					}
+				}
+			</style>
+
+			<script type="text/javascript">
+				$(function() {
+					// 返回顶部
+					$(window).scroll(function() {
+						if ($(window).scrollTop() > 100) {
+							$(".gotop").css({
+								'display': 'block'
+							});
+						} else {
+							$(".gotop").css({
+								'display': 'none'
+							});
+						}
+						if ($(window).scrollTop() > 0) {
+							$('.header').addClass('headerEffect');
+						} else {
+							$('.header').removeClass('headerEffect');
+						}
+					});
+					//当点击跳转链接后，回到页面顶部位�?					$(".gotop").click(function() {
+						$('body,html').animate({
+							scrollTop: 0
+						}, 500);
+						return false;
+					});
+
+					//滚动动画
+					$('.fadeIn,.fadeInUp,.fadeInDown,.fadeInLeft,.fadeInRight,.zoomIn').each(function() {
+						var browserH = $("body").height();
+						var offset = $(this).offset().top;
+						if (offset < browserH) {
+							$(this).addClass('animated');
+						} else {
+							$(this).removeClass('animated');
+						};
+					});
+					$(window).scroll(function() {
+						var top = $(document).scrollTop();
+						$('.fadeIn,.fadeInUp,.fadeInDown,.fadeInLeft,.fadeInRight,.zoomIn').each(function() {
+							var browserH1 = $("body").height();
+							var offset1 = $(this).offset().top - browserH1;
+							if (top >= offset1) {
+								$(this).addClass('animated');
+							} else {
+								$(this).removeClass('animated');
+							};
+						});
+					});
+				});
+			</script>
+		</section>
+
+		<div class="modal fade select_mail_modal" id="selectMailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<i class="modal-close" data-dismiss="modal" aria-hidden="true">×</i>
+					<div class="modal-body">
+						<div class="modal_inner">
+							<h4 class="modal-title">选择提交邮箱</h4>
+							<ul class="mail_list">
+								<li>
+									<p>医药化工�?/p><a href="javascript:void(0)" onclick="save()">tianyu@zylaboratory.com</a>
+								</li>
+								<li>
+									<p>医药设备�?/p><a href="javascript:void(0)" onclick="save()">wei.luo@zylaboratory.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="./首页-上海智丹国际贸易有限公司_files/jquery-validate.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				// 表单错误提示
+				$('.form_main form').validate({
+					onBlur: function() {
+						var $parent = this.parent();
+						var _status = parseInt(this.attr('data-status'));
+						if (!_status) {
+							$parent.addClass('error');
+						}
+						return false;
+					}
+				});
+				$('.form_main form').on('submit', function(event) {
+					var name = $("#name").val();
+					var tel = $("#tel").val();
+					var address = $("#address").val();
+					var email = $("#email").val();
+					var content = $("#content").val();
+
+					if (name == "") {
+						$('#name').focus();
+						return false;
+					} else if (tel == "") {
+						$('#tel').focus();
+						return false;
+					} else if (address == "") {
+						$('#address').focus();
+						return false;
+					} else if (email == "") {
+						$('#email').focus();
+						return false;
+					} else if (content == "") {
+						$('#content').focus();
+						return false;
+					}
+
+					var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+					if (!myreg.test($("#tel").val())) {
+						alert('请输入有效的手机号码�?);
+						return false;
+					}
+
+					event.preventDefault();
+					$(this).validate('submitValidate'); //return boolean;
+					$('#selectMailModal').modal('show');
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('.header .nav>li:eq(0)').addClass('active');
+			});
+
+			var swiperBanner;
+			var swiperAppArea;
+			var apiBase = '/api';
+			var language = 'zh';
+
+			function renderNavigation(items) {
+				var $nav = $('#main-nav');
+				if (!$nav.length) return;
+				$nav.empty();
+				if (!items || !items.length) {
+					$nav.append('<li class="active"><a href="/">网站首页</a></li>');
+					return;
+				}
+
+				items.forEach(function(item, index) {
+					if (item.children && item.children.length) {
+						var $li = $('<li class="dropdown"></li>');
+						$li.append('<a class="dropdown-pc" href="' + (item.url || 'javascript:;') + '">' + (item.name || '') + '</a>');
+						$li.append('<a class="dropdown-min dropdown-toggle" data-toggle="dropdown" aria-expanded="true">' + (item.name || '') + '</a>');
+						var $menu = $('<ul class="dropdown-menu"></ul>');
+						item.children.forEach(function(child) {
+							$menu.append('<li><a href="' + (child.url || 'javascript:;') + '">' + (child.name || '') + '</a></li>');
+						});
+						$li.append($menu);
+						$nav.append($li);
+					} else {
+						var $li = $('<li' + (index === 0 ? ' class="active"' : '') + '></li>');
+						$li.append('<a href="' + (item.url || 'javascript:;') + '">' + (item.name || '') + '</a>');
+						$nav.append($li);
+					}
+				});
+			}
+
+			function renderBanners(items) {
+				var $wrapper = $('#banner-wrapper');
+				if (!$wrapper.length) return;
+				$wrapper.empty();
+				if (!items || !items.length) return;
+
+				items.forEach(function(item) {
+					var $slide = $('<div class="swiper-slide"></div>');
+					var large = item.image_large || item.image_small || '';
+					var small = item.image_small || item.image_large || '';
+					$slide.append('<div class="swiper-slide-img PC_img" style="background:url(' + large + ') no-repeat center;background-size:cover;"></div>');
+					$slide.append('<div class="swiper-slide-img min_img" style="background:url(' + small + ') no-repeat center;background-size:cover;"></div>');
+					if (item.title) {
+						var $text = $('<div class="banner_text"><div class="container"><h2 style="color:#fff;">' + item.title + '</h2></div></div>');
+						if (item.link) {
+							$text.find('.container').append('<a href="' + item.link + '" style="color:#fff;display:inline-block;margin-top:10px;">查看详情</a>');
+						}
+						$slide.append($text);
+					}
+					$wrapper.append($slide);
+				});
+
+				if (swiperBanner) {
+					swiperBanner.destroy(true, true);
+				}
+				swiperBanner = new Swiper('.banner .swiper-container', {
+					watchOverflow: true,
+					autoplay: {
+						delay: 5000,
+						stopOnLastSlide: false,
+						disableOnInteraction: false,
+					},
+					loop: true,
+					effect: 'fade',
+					pagination: {
+						el: '.banner .swiper-pagination',
+						clickable: true,
+					},
+					navigation: {
+						nextEl: '.banner .swiper-button-next',
+						prevEl: '.banner .swiper-button-prev',
+					},
+					observer: true,
+					observeParents: true,
+				});
+			}
+
+			function renderCompanyProfile(item) {
+				if (!item) return;
+				$('.index01_main .InfoContent').html('<p>' + (item.content || item.description || '') + '</p>');
+				$('.index01_main .more').attr('href', item.link || '#');
+				$('.index01_main .rightImg img').attr('src', item.image || './首页-上海智丹国际贸易有限公司_files/img1_1589945469735.jpg');
+				$('.indexTitle .h2').text(item.title || '公司简�?);
+			}
+
+			function renderBusinessScopes(items) {
+				var $list = $('#business-scopes-wrapper');
+				if (!$list.length) return;
+				$list.empty();
+				if (!items || !items.length) return;
+
+				items.forEach(function(item) {
+					var $slide = $('<div class="swiper-slide" style="margin-right: 40px;"></div>');
+					$slide.append('<a href="' + (item.link || 'javascript:;') + '"><div class="img"><img src="' + (item.image || '') + '"></div><div class="text"><div class="h5">' + (item.title || '') + '</div><div class="p">' + (item.description || '') + '</div><em>READ MORE</em></div></a>');
+					$list.append($slide);
+				});
+
+				if (swiperAppArea) {
+					swiperAppArea.destroy(true, true);
+				}
+				swiperAppArea = new Swiper('.appArea .swiper-container', {
+					watchOverflow: true,
+					autoplay: {
+						delay: 3000,
+						stopOnLastSlide: false,
+						disableOnInteraction: false,
+					},
+					slidesPerView: 3,
+					spaceBetween: 40,
+					observer: true,
+					observeParents: true,
+					breakpoints: {
+						479: {
+							slidesPerView: 1,
+							spaceBetween: 15
+						},
+						767: {
+							slidesPerView: 2,
+							spaceBetween: 15
+						},
+						991: {
+							spaceBetween: 25,
+						},
+						1199: {
+							spaceBetween: 35,
+						},
+					}
+				});
+			}
+
+			function renderContactInfo(item) {
+				if (!item) return;
+				$('.index03_main_left .tel').html('<img src="./首页-上海智丹国际贸易有限公司_files/z1.png">' + (item.phone || item.mobile || ''));
+				$('.index03_main_left .h1').text(item.company_name || '上海智丹国际贸易有限公司');
+				var content = [];
+				if (item.address) content.push('<p>公司地址�? + item.address + '</p>');
+				if (item.phone || item.mobile) content.push('<p>联系电话�? + (item.phone || item.mobile) + '</p>');
+				if (item.email) content.push('<p>公司邮箱�? + item.email + '</p>');
+				$('.index03_main_left .InfoContent').html(content.join(''));
+				$('.index03_main_left .ewms .item img').attr('src', item.qr_code || './首页-上海智丹国际贸易有限公司_files/智丹中文_1593586892111.jpg');
+			}
+
+			function loadPageData() {
+				$.getJSON(apiBase + '/navigations?language=' + language + '&tree=1').done(function(res) {
+					if (res && res.success) {
+						renderNavigation(res.data || []);
+					}
+				});
+
+				$.getJSON(apiBase + '/banners?language=' + language).done(function(res) {
+					if (res && res.success) {
+						renderBanners(res.data || []);
+					}
+				});
+
+				$.getJSON(apiBase + '/company-profiles?language=' + language).done(function(res) {
+					if (res && res.success && res.data && res.data.length) {
+						renderCompanyProfile(res.data[0]);
+					}
+				});
+
+				$.getJSON(apiBase + '/business-scopes?language=' + language).done(function(res) {
+					if (res && res.success) {
+						renderBusinessScopes(res.data || []);
+					}
+				});
+
+				$.getJSON(apiBase + '/contact-infos?language=' + language).done(function(res) {
+					if (res && res.success && res.data && res.data.length) {
+						renderContactInfo(res.data[0]);
+					}
+				});
+			}
+
+			var _height = $(window).height();
+			$('.downTip').click(function() {
+				$('body,html').animate({
+					"scrollTop": _height - 90
+				}, 500);
+			});
+
+			function save() {
+				var name = $("#name").val();
+				var tel = $("#tel").val();
+				var address = $("#address").val();
+				var email = $("#email").val();
+				var content = $("#content").val();
+
+				if (name == "") {
+					$('#name').focus();
+					return false;
+				} else if (tel == "") {
+					$('#tel').focus();
+					return false;
+				} else if (address == "") {
+					$('#address').focus();
+					return false;
+				} else if (email == "") {
+					$('#email').focus();
+					return false;
+				} else if (content == "") {
+					$('#content').focus();
+					return false;
+				}
+
+				var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+				if (!myreg.test($("#tel").val())) {
+					alert('请输入有效的手机号码�?);
+					return false;
+				}
+
+				$.ajax({
+					type: 'POST',
+					url: apiBase + '/messages',
+					data: {
+						name: name,
+						phone: tel,
+						address: address,
+						email: email,
+						message: content
+					},
+					success: function(res) {
+						alert('我们已收到您的留言�?);
+						window.location.reload(true);
+					},
+					error: function(xhr) {
+						var msg = '提交失败，请稍后再试';
+						if (xhr.responseJSON && xhr.responseJSON.message) {
+							msg = xhr.responseJSON.message;
+						}
+						alert(msg);
+					}
+				});
+			};
+
+			$(document).ready(function() {
+				loadPageData();
+				$('.form_main form').validate({
+					onBlur: function() {
+						var $parent = this.parent();
+						var _status = parseInt(this.attr('data-status'));
+						if (!_status) {
+							$parent.addClass('error');
+						}
+						return false;
+					}
+				});
+				$('.form_main form').on('submit', function(event) {
+					var name = $("#name").val();
+					var tel = $("#tel").val();
+					var address = $("#address").val();
+					var email = $("#email").val();
+					var content = $("#content").val();
+
+					if (name == "") {
+						$('#name').focus();
+						return false;
+					} else if (tel == "") {
+						$('#tel').focus();
+						return false;
+					} else if (address == "") {
+						$('#address').focus();
+						return false;
+					} else if (email == "") {
+						$('#email').focus();
+						return false;
+					} else if (content == "") {
+						$('#content').focus();
+						return false;
+					}
+
+					var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+					if (!myreg.test($("#tel").val())) {
+						alert('请输入有效的手机号码�?);
+						return false;
+					}
+
+					event.preventDefault();
+					$(this).validate('submitValidate');
+					save();
+				});
+			});
+		</script>
+	
+</body><!--表单提示错误--></html>
