@@ -17,7 +17,7 @@ class BusinessScopeController extends Controller
             ->get();
 
         foreach ($scopes as $scope) {
-            $scope->image = $scope->image ? url($scope->image) : null;
+            $scope->image = $scope->image ? env('APP_URL').'/storage/admin/'.$scope->image : null;
         }
 
         return response()->json([
