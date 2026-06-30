@@ -27,6 +27,9 @@ class NavigationController extends Controller
         ]);
     }
 
+    /**
+     * 栏目详情 如果有子栏目则返回子栏目列表 
+     */
     public function show(Request $request, $id)
     {
         $language = $request->get('language', 'zh');
@@ -56,7 +59,18 @@ class NavigationController extends Controller
                 ->where('status', 1)
                 ->first();
         }
-        $navigation->image = $navigation->image ? url($navigation->image) : null;
+        $navigation->image = $navigation->image ? env('APP_URL').'/storage/admin/'.$navigation->image : null;
+
+        // 如果有子栏目则返回子栏目列表
+        $children = Navigation::select(['id', 'name'])->where('language', $language)
+            ->where('status', 1)
+            ->where('parent_id', $navigation->id)
+            ->orderBy('sort')
+            ->get();
+
+        foreach ($children as $child) {
+            $child->image = $child->image ? env('APP_URL').'/storage/admin/'.$child->image : null;
+        }
 
         return response()->json([
             'success' => true,
@@ -64,6 +78,7 @@ class NavigationController extends Controller
                 'navigation' => $navigation,
                 'parent' => $parent,
                 'siblings' => $siblings,
+                'children' => $children
             ]
         ]);
     }
