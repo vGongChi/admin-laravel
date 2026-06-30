@@ -14,7 +14,7 @@ class ContactInfoController extends Controller
         $contacts = ContactInfo::where('language', $language)->get();
 
         foreach ($contacts as $contact) {
-            $contact->qr_code = $contact->qr_code ? url($contact->qr_code) : null;
+            $contact->qr_code = $contact->qr_code ? env('APP_URL').'/storage/admin/'.$contact->qr_code : null;
         }
         return response()->json([
             'success' => true,
