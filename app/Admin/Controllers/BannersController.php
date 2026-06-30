@@ -26,7 +26,7 @@ class BannersController extends AdminController
         $grid->column('created_at', __('创建时间'));
 
         $grid->filter(function ($filter) {
-            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'ja' => '日语']);
+            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'rus' => '俄语']);
             $filter->like('title', '标题');
             $filter->equal('status', '状态')->select([1 => '显示', 0 => '隐藏']);
         });
@@ -55,7 +55,7 @@ class BannersController extends AdminController
     protected function form()
     {
         $form = new Form(new Banner());
-        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'ja' => '日语'])->default('zh')->rules('required');
+        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'rus' => '俄语'])->default('zh')->rules('required');
         $form->text('title', __('标题'));
         $form->image('image_large', __('大图'))->rules('required|image');
         $form->image('image_small', __('小图'))->rules('required|image');

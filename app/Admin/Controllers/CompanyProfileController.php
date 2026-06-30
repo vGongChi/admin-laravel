@@ -25,7 +25,7 @@ class CompanyProfileController extends AdminController
         $grid->column('created_at', __('创建时间'));
 
         $grid->filter(function ($filter) {
-            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'ja' => '日语']);
+            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'rus' => '俄语']);
             $filter->like('title', '标题');
         });
 
@@ -53,7 +53,7 @@ class CompanyProfileController extends AdminController
     {
         $form = new Form(new CompanyProfile());
 
-        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'ja' => '日语'])->default('zh')->rules('required');
+        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'rus' => '俄语'])->default('zh')->rules('required');
         $form->text('title', __('标题'))->rules('required');
         $form->text('title_en', __('英文标题'));
         $form->textarea('description', __('简介'))->rules('required');

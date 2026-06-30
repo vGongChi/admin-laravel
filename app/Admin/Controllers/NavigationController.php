@@ -29,7 +29,7 @@ class NavigationController extends AdminController
         $grid->column('image', __('图片'))->image();
 
         $grid->filter(function ($filter) {
-            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'ja' => '日语']);
+            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'rus' => '俄语']);
             $filter->like('name', '名称');
         });
 
@@ -62,7 +62,7 @@ class NavigationController extends AdminController
     {
         $form = new Form(new Navigation());
 
-        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'ja' => '日语'])->default('zh')->rules('required');
+        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'rus' => '俄语'])->default('zh')->rules('required');
         $form->select('parent_id', __('父级'))->options([0 => '顶级'] + Navigation::pluck('name', 'id')->toArray())->default(0);
         $form->text('name', __('名称'))->rules('required');
         $form->url('url', __('链接'))->rules('nullable|url');

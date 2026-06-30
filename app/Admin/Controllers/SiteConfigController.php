@@ -25,7 +25,7 @@ class SiteConfigController extends AdminController
 
         $grid->filter(function ($filter) {
             $filter->like('key_name', '配置键');
-            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'ja' => '日语']);
+            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'rus' => '俄语']);
         });
 
         return $grid;
@@ -52,7 +52,7 @@ class SiteConfigController extends AdminController
         $form = new Form(new SiteConfig());
 
         $form->text('key_name', __('配置键'))->rules('required');
-        $form->select('language', __('语言'))->options(['' => '通用', 'zh' => '中文', 'en' => '英语', 'ja' => '日语'])->default('');
+        $form->select('language', __('语言'))->options(['' => '通用', 'zh' => '中文', 'en' => '英语', 'rus' => '俄语'])->default('');
         $form->textarea('value', __('配置值'))->rules('required');
         $form->display('created_at', __('创建时间'));
         $form->display('updated_at', __('更新时间'));

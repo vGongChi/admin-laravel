@@ -27,7 +27,7 @@ class ContactInfoController extends AdminController
         $grid->column('created_at', __('创建时间'));
 
         $grid->filter(function ($filter) {
-            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'ja' => '日语']);
+            $filter->equal('language', '语言')->select(['zh' => '中文', 'en' => '英语', 'rus' => '俄语']);
             $filter->like('company_name', '公司名称');
         });
 
@@ -57,7 +57,7 @@ class ContactInfoController extends AdminController
     {
         $form = new Form(new ContactInfo());
 
-        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'ja' => '日语'])->default('zh')->rules('required');
+        $form->select('language', __('语言'))->options(['zh' => '中文', 'en' => '英语', 'rus' => '俄语'])->default('zh')->rules('required');
         $form->text('title', __('标题'));
         $form->text('company_name', __('公司名称'))->rules('required');
         $form->text('phone', __('电话'));
