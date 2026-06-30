@@ -14,7 +14,7 @@ class CompanyProfileController extends Controller
         $profiles = CompanyProfile::where('language', $language)->get();
 
         foreach ($profiles as $profile) {
-            $profile->image = $profile->image ? url($profile->image) : null;
+            $profile->image = $profile->image ? env('APP_URL').'/storage/admin/'.$profile->image : null;
         }
 
         return response()->json([
