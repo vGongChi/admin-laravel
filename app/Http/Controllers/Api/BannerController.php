@@ -16,8 +16,8 @@ class BannerController extends Controller
             ->orderBy('sort')
             ->get();
         foreach ($banners as &$banner) {
-            $banner->image_large = $banner->image_large ? url($banner->image_large) : null;
-            $banner->image_small = $banner->image_small ? url($banner->image_small) : null;
+            $banner->image_large = $banner->image_large ? url('storage/admin/'.$banner->image_large) : null;
+            $banner->image_small = $banner->image_small ? url('storage/admin/'.$banner->image_small) : null;
         }   
 
         return response()->json([
